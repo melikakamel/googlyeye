@@ -1,0 +1,43 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: #ffc6d8;
+}
+
+#eyes {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+  touch-action: none; 
+}
+
+#eyes:hover {
+  transform: scale(1.05);
+}
+
+#eyes.clicked {
+  transform: scale(0.95);
+}
+
+#eye-group-left,
+#eye-group-right {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.18s ease;
+}
+
+#eye-group-left.blink,
+#eye-group-right.blink {
+  transform: scaleY(0.05);
+}
+
+@media (max-width: 400px) {
+  #eyes {
+    max-width: 110px;
+  }
+}
