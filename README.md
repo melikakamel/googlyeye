@@ -4,7 +4,8 @@ A simple interactive googly-eyes widget built with inline SVG, CSS, and vanilla 
 ---
 ## ▶️ Demo
 
-![Uploading demo.gif…]()
+
+![Preview demo gif](demo.gif)
 
 
 ---
